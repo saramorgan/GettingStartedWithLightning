@@ -1,0 +1,39 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" controller="ListRacesController">
+	<aura:attribute name="races" type="Race__c[]"  />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<!-- key here is that the handler has no name attribute specified when dealing with application event -->
+    <aura:handler event="c:addToRaceList" action="{!c.handleAddToRaces}" />
+    
+    <ltng:require styles="/resource/slds100/assets/styles/salesforce-lightning-design-system.min.css"/>
+    <div class="slds">
+        <div class="slds-m-around--small slds-p-top--large">
+            <div class="slds-card">
+                <aura:iteration items="{!v.races}" var="race">
+                    <header class="slds-card__header">
+                    	<ui:outputText class="slds-text-heading--label" value="{!race.Name}" />
+                    </header>
+                    <section class="slds-card__body">
+          				<div class="slds-tile slds-hint-parent">
+              				<p class="slds-tile__title slds-truncate">Race Type: 
+                  				<ui:outputText value="{!race.Type__c}" />
+              				</p>
+                            <p class="slds-truncate">Location: 
+                                <ui:outputText value="{!race.Location__c}"/>
+                            </p>
+                            <p class="slds-truncate">Date/Time:
+                                <ui:outputDateTime value="{!race.DateTime__c}" />
+                            </p>
+                            <p class="slds-truncate">Attended?
+                                <ui:inputCheckbox value="{!race.Attended__c}" />
+                            </p>
+                            <p class="slds-truncate">Results: 
+                                <ui:outputTextArea value="{!race.Results__c}"/>
+                            </p>
+                        </div>
+        			</section>
+                </aura:iteration>
+            </div>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,26 @@
+<aura:component controller="RaceController" >
+    <aura:attribute name="race" type="Race__c"/>
+    
+    <header class="slds-card__header">
+        <ui:outputText class="slds-text-heading--label" value="{!v.race.Name}" />
+    </header>
+    <section class="slds-card__body">
+        <div class="slds-tile slds-hint-parent">
+            <p class="slds-tile__title slds-truncate">Race Type: 
+                <ui:outputText value="{!v.race.Type__c}" />
+            </p>
+            <p class="slds-truncate">Location: 
+                <ui:outputText value="{!v.race.Location__c}"/>
+            </p>
+            <p class="slds-truncate">Date/Time:
+                <ui:outputDateTime value="{!v.race.DateTime__c}" />
+            </p>
+            <p class="slds-truncate">Attended?
+                <ui:inputCheckbox change="{!c.handleUpdate}" value="{!v.race.Attended__c}" />
+            </p>
+            <p class="slds-truncate">Results: 
+                <ui:outputTextArea value="{!v.race.Results__c}"/>
+            </p>
+        </div>
+    </section>
+</aura:component>

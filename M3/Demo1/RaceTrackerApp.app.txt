@@ -1,0 +1,18 @@
+<aura:application >
+    
+    <ltng:require styles="/resource/slds/assets/styles/salesforce-lightning-design-system.min.css"/>
+    
+    <div class="slds">
+        <c:PageHeader title="My Race Tracker" />
+            
+        <div class="slds-m-around--small slds-p-top--large">
+        	<c:NewRace />
+        </div>
+        
+        <div class="slds-m-around--small slds-p-top--large">
+            <c:ListRaces />
+        </div>
+
+    </div>    
+    
+</aura:application>

@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableforALlPageTypes">
+    <aura:attribute name="name" type="String" />
+    <aura:handler name="init" value="{!this}"  action="{!c.doInit}" />
+	<div>
+        <h1>Enter New Race</h1>
+        <ui:inputText label="name" aura:id="name" value="{!v.name}" />
+        <ui:inputSelect label="Race Type" aura:id="Type" />
+        <ui:inputDate label="Race Date" aura:id="DateTime" />
+        <ui:inputTextArea label="Location" aura:id="Location" />
+        <ui:inputCheckbox label="Attended?" aura:id="Attended" />
+        <ui:inputText label="Results" aura:id="Results" />
+        <ui:button label="Submit" press="{!c.newRace}" />
+    </div>
+</aura:component>

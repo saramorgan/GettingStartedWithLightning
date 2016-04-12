@@ -1,0 +1,11 @@
+.THIS .uiInputDateTime .datePicker-openIcon {
+   position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+.THIS .uiInputDateTime .timePicker-openIcon {
+   position: absolute;
+    left: 95%;
+    top: 45%;
+}

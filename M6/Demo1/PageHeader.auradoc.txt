@@ -1,0 +1,15 @@
+<aura:documentation>
+	<aura:description>
+        <p>
+        	Allows you to include a Page Header for the Race Tracker App
+            and specify what should be diplayed in the title
+        </p>
+        <p><pre>&lt;c:PageHeader title="My Race Tracker" &gt;</pre>
+        </p>
+    </aura:description>
+	<aura:example name="PageHeaderExample" ref="c:PageHeader" label="Using the Page Header Component">
+		<p>
+            This example shows you what the <code>c:PageHeader</code> looks like rendered if you <b>DO NOT</b> specify a title
+        </p>
+	</aura:example>
+</aura:documentation>

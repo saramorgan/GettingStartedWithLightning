@@ -1,0 +1,21 @@
+<aura:application >
+    
+    <div>
+        <h1>Enter New Race</h1>
+        <ui:inputText label="Race Name" aura:id="Name" value="{!v.name}" required="true" />
+        <ui:inputSelect label="Race Type" aura:id="Type" />
+        <ui:inputDate label="Date/Time" aura:id="DateTime" />
+        <ui:inputTextArea label="Location" aura:id="Location" />
+        <ui:inputCheckbox label="Attended?" aura:id="Attended" />
+        <ui:inputText label="Results" aura:id="Results" />
+        <ui:button press="{!c.newRace}" label="Submit" />
+    </div>
+    
+	<div>
+        <aura:iteration items="{v.races}" var="race">
+            <ui:outputText value="{!race}" />
+        </aura:iteration>
+    </div> 
+	
+           
+</aura:application>
