@@ -8,7 +8,7 @@ Course viewers or anyone learning about Lightning are encouraged to make changes
 | Change                   | Description
 | -------------------------| --------------------
 | Order Race Results       | Order results displayed in ListRaces component by date in descending order
-| Add link to edit page    | Add a link in the Race component for the first inputText component that lists the race. This should link to the the built-in Salesforce edit page 
+| Add link to edit page    | Add a link in the Race component for the first inputText component that contains the race name. This should link to the built-in Salesforce edit page. I will give you a hint that this is done easily by just linking to the ID of the race, which you have access to.  
 | Check for permissions    | Check for CRUD/FLS permissions; Check out the following URL for more info: http://sforce.co/1S8cXma 
 | Organize Results w/ tabs | Use SLDS tabs to organize the race results within tabs for attended/Did not attend and upcoming races. Also you will need to create an event which moves races to different tabs as the races are entered or marked as attended.
 
