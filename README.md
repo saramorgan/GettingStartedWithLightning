@@ -1,6 +1,11 @@
 # Getting Started With Lightning
 Code from Sara Morgan's Pluralsight course called Getting Started Building SPAs with Lightning Component Framework
 
+Link to Unmanaged package that installs all the final code files, including the required unit tests that were not covered in the course
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04t36000000YgMU
+
+NOTE: You will need to enable Lightning Components for this org and also add a custom domain and enable it before installing the package or creating the code in your org. You should also enable debug mode in order to see all messages displayed in the console log.
+
 ## Suggested Changes
 The following are some changes that were suggested in the course:
 Course viewers or anyone learning about Lightning are encouraged to make changes and submit pull requests.
